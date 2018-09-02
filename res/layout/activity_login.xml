@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebebeb"
+    tools:context="com.example.amitg.basics.login">
+
+
+    <EditText
+        android:id="@+id/luname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+
+        android:hint="Username"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/lupass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/luname"
+        android:layout_alignStart="@+id/luname"
+        android:layout_below="@+id/luname"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:hint="Password"
+
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:onClick="onClickButton"
+        android:background="#009bff"
+        android:textColor="#ffffff"
+        android:layout_alignLeft="@+id/lupass"
+        android:layout_alignStart="@+id/lupass"
+        android:layout_centerVertical="true"
+        android:text="login" />
+
+
+
+</RelativeLayout>
